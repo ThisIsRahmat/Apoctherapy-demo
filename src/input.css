@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+.large-heading {
+@apply text-3xl font-bold leading-10 text-[#411C06] sm:truncate sm:tracking-tight
+}
+
+
+.small-heading{
+    @apply text-[#411C06] text-xl font-medium leading-8
+}
+
+
+.xs-heading{
+    @apply text-[#411C06] text-xl font-medium leading-7
+}
+}
+
+
+p {
+    @apply   text-base leading-6 text-[#411C06]
+}

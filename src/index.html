@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Apocatherapy</title>
+      <link href="./output.css" rel="stylesheet">
+   </head>
+   <body>
+      <header class="bg-white border-b border-gray-200  shadow-sm">
+         <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+            <a href="#" class="-m-1.5 p-1.5">
+            <span class="sr-only">Your Company</span>
+            <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
+            </a>
+            <div class="flex lg:hidden">
+               <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                  <span class="sr-only">Open main menu</span>
+                  <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+               </button>
+            </div>
+            <div class="hidden lg:flex lg:gap-x-8">
+               <a href="./index.html" class="inline-flex items-center border-b-2 border-[#01510D] px-1 pt-1 text-sm font-medium text-[#01510D]" aria-current="page">Home<span></span></a>
+               <a href="./lemonbalm.html" class="text-sm  leading-6 text-[#858483]">Plants</a>
+               <a href="#" class="text-sm  leading-6 text-[#858483]">About us</a>
+               <a href="#" class="text-sm  leading-6 text-[#858483]">Settings</a>
+               <!-- <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a> -->
+            </div>
+         </nav>
+      </header>
+      <div class=" mx-auto px-20 pt-8 pb-4">
+         <div class="min-w-0 flex-1 mx-auto pb-8">
+            <h2 class="text-2xl font-bold leading-7 text-gray-900 sm:truncate  sm:tracking-tight pb-4">Home</h2>
+            <div>
+               <p>
+                  Welcome back to your personal apocatherapy connecting you to a network of fellow plant pals.
+               </p>
+            </div>
+         </div>
+         <div class="grid grid-cols-1 px-8 gap-12 sm:grid-cols-2">
+            <div class="border p-6 rounded-md bg-[#F7F1EA] border-[#F7F1EA]">
+               <h4 class="large-heading">Today</h4>
+               <p> How are you feeling right now?</p>
+               <div>
+                  <div class="mt-2 flex rounded-md ">
+                     <div class="relative flex flex-grow items-stretch focus-within:z-10">
+                        <input  class="block w-full rounded-none rounded-l-md border-0 py-1.5 pl-10 text-gray-900  placeholder:text-[#252525] placeholder:text-xs " placeholder="Stressed">
+                     </div>
+                     <button type="button" class="relative bg-[#007646] text-white -ml-px inline-flex items-center gap-x-1.5 rounded-r-md px-3 py-2 text-sm font-semibold ring-1  hover:text-[#007646] hover:bg-white">
+                     Submit
+                     </button>
+                  </div>
+                  <div class="border rounded-md bg-[#F9F4ED] border-[#F9F4ED] shadow-lg mt-4">
+                     <h4 class="p-4 small-heading">Lemon Balm</h4>
+                     <img/>
+                     <p class="p-4"> The best option to ease stress and anxiety</p>
+                     <p class="text-[#007646] p-4 text-base"> Learn more <span aria-hidden="true">&rarr;</span></p>
+                  </div>
+               </div>
+            </div>
+            <div class="border p-6 rounded-md bg-[#F7F1EA] border-[#F7F1EA]">
+               <h4 class="large-heading">My plants</h4>
+               <p> Click on a plant to read its full profile.</p>
+               <div>
+                  <div class="grid grid-cols-2 gap-4  ">
+                     <div class="border rounded-md  bg-[#F0DDD2] border-[#F0DDD2]  mt-4">
+                        <img/>
+                        <p class="p-4 xs-heading"> Borage</p>
+                     </div>
+                     <div class="border rounded-md bg-[#F0DDD2] border-[#F0DDD2]  mt-4">
+                        <img/>
+                        <p class="p-4 xs-heading "> Chamomile</p>
+                     </div>
+                     <div class="border rounded-md bg-[#F0DDD2] border-[#F0DDD2]  mt-4">
+                        <img/>
+                        <p class="p-4 xs-heading">Gotu Kola</p>
+                     </div>
+                     <div class="border rounded-md bg-[#F0DDD2] border-[#F0DDD2]  mt-4">
+                        <img/>
+                        <p class="p-4 xs-heading">Lavender</p>
+                     </div>
+                  </div>
+                  <p class="text-[#007646] pt-4 text-base font-semibold"> See all plants <span aria-hidden="true">></span></p>
+               </div>
+            </div>
+            <div class="border p-6 rounded-md bg-[#D3EEE3] border-[#D3EEE3]">
+               <h4 class="large-heading">My guides</h4>
+               <p class="">Click on a plant to read it's full profile</p>
+               <div class="border rounded-md bg-[#E1F1EF] border-[#E1F1EF] shadow-lg mt-4">
+                  <img/>
+                  <h4 class="p-4 xs-heading">Quick guide to guerilla gardening</h4>
+               </div>
+               <div class="border rounded-md bg-[#E1F1EF] border-[#E1F1EF] shadow-lg mt-4">
+                  <img/>
+                  <h4 class="p-4 xs-heading">How rising temperatures affect local landscapes</h4>
+               </div>
+               <p class="text-[#007646] pt-4 text-base font-semibold">See all guides <span aria-hidden="true">></span></p>
+            </div>
+            <div class="border p-6 rounded-md bg-[#F7F1EA] border-[#F7F1EA]">
+               <h4 class="large-heading">Community</h4>
+               <p> Click on a plant to read its full profile.</p>
+               <h5 class="small-heading">Events</h5>
+               <div class="border rounded-md bg-[#F0DDD2] border-[#F0DDD2]  mt-4">
+                  <img/>
+                  <h4 class="p-4 xs-heading"> Meet the herbalists</h4>
+                  <p class="p-4">2nd September 2024</p>
+               </div>
+               <h5>Seeds</h5>
+               <div class="space-y-2">
+                  <button type="button" class="rounded-md w-full bg-[#007646]  px-3 py-2 text-sm font-semibold text-white shadow-sm  ">  I have seeds to share</button>
+                  <button type="button" class="rounded-md w-full bg-[#D3EEE3] px-3 py-2 text-sm font-semibold text-[#007646] shadow-sm "> I would like to request seeds</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+   </body>
+</html>
