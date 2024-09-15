@@ -9,10 +9,10 @@
    <body>
       <header class="bg-white border-b border-gray-200 shadow-sm ">
          <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
-           <a href="#" class="-m-1.5 p-1.5">
+
              <span class="sr-only">Your Company</span>
              <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
-           </a>
+
            <div class="flex lg:hidden">
              <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
                <span class="sr-only">Open main menu</span>
@@ -30,85 +30,98 @@
            </div>
          </nav>
          <!-- Mobile menu, show/hide based on menu open state. -->
-         <div class="lg:hidden" role="dialog" aria-modal="true">
-           <!-- Background backdrop, show/hide based on slide-over state. -->
-           <div class="fixed inset-0 z-10"></div>
-           <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-             <div class="flex items-center justify-between">
-               <a href="#" class="-m-1.5 p-1.5">
-                 <span class="sr-only">Your Company</span>
-                 <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
-               </a>
-               <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
-                 <span class="sr-only">Close menu</span>
-                 <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                   <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                 </svg>
-               </button>
-             </div>
-             <div class="mt-6 flow-root">
-               <div class="-my-6 divide-y divide-gray-500/10">
-                 <div class="space-y-2 py-6">
-                   <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Home</a>
-                   <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Plants</a>
-                   <a href="#" class="text-sm font-semibold leading-6 text-gray-900">About us</a>
-                   <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Settings</a>
-                 </div>
-         
-               </div>
-             </div>
-           </div>
-         </div>
+ 
        </header>
-      <section>
+       <div class="  px-8 pt-8 pb-4 grid grid-cols-2 gap-8">
+      <div>
+        <div class="border-[#D3EEE3] sticky h-screen bg-[#F7FFF9] border rounded-md  p-4">
          <div>
-            <h1>Lemon Balm</h1>
+            <h1 class="text-[#01510D] large-heading">Lemon Balm</h1>
          </div>
          <div>
-            <h3>Profile</h3>
-            <h3>Botanical name</h3>
-            <h3>Common name</h3>
-            <h3>Family</h3>
-            <h3>Energetics</h3>
-            <h3>Pairs well with</h3>
-            <h3>Parts used</h3>
+            <h2>Profile</h3>
+
+            <div class="grid grid-cols-2 grid-rows-3">
+              <div>
+                <h3 class="xs-heading text-[#01510D]">Botanical name</h3>
+                <p class="text-sm">Melissa officinalis</p>
+      
+          </div>
+          <div>
+            <h3 class="xs-heading text-[#01510D]">Common name</h3>
+            <p class="text-sm">Melissa</p>
+            <p class="text-sm">Bee balm</p>
+            <p class="text-sm">Honey plant</p>
+            <p class="text-sm">Heart's delight</p>
+          </div>
+          <div>
+            <h3 class="xs-heading text-[#01510D]">Family</h3>
+            <p class="text-sm">Lamiaceae (mint family )</p>
+          </div>
+          <div>
+            <h3 class="xs-heading text-[#01510D]">Energetics</h3>
+            <p class="text-sm">Cold</p>
+            <p class="text-sm">Dry sour</p>
+            <p class="text-sm">Slightly bitter</p>
+            <p class="text-sm">Relaxant</p>
+          </div>
+<div>           <h3 class="xs-heading text-[#01510D]">Pairs well with</h3>
+  <p class="text-sm">Lavendar</p>
+          </div>
+            <div>
+              <h3 class="xs-heading text-[#01510D]">Parts used</h3>
+              <p class="text-sm">Leaves</p>
+          </div>
+          </div>
          </div>
-         <div>
-            <p> Lemon balm inhibits thyroid function</p>
-            <p> It's not to be taken during pregnancy unless under guidance from a professional</p>
-            <p> Lemon balm lowers blood pressure</p>
-            <p> Use with caution if taking antidepressants</p>
+         <div class=" border flex flex-cols-2 p-20 border-[#E33B32] bg-[#FFF5F4] rounded-md">
+          <div>
+            <span aria-hidden="true">&rarr;</span>
+          </div>
+          <div class="">
+          <p class="text-sm">Lemon balm inhibits thyroid function</p>
+          <p class="text-sm"> It's not to be taken during pregnancy unless under guidance from a professional</p>
+          <p class="text-sm">Lemon balm lowers blood pressure</p>
+          <p class="text-sm"> Use with caution if taking antidepressants</p>
          </div>
-      </section>
-      <section>
-         <div>
-            <h3>Growing</h3>
-            <p> </p>
-            <p> </p>
-            <p> </p>
-            <p>Read more</p>
+        </div>
+        </div>
+      </div>
+      <div class="space-y-8 min-h-screen ">
+         <div class="rounded-md border p-4 bg-[#F7F1EA] border-[#F7F1EA]">
+          <h3 class="small-heading">Growing</h3>
+          <div class="space-x-4">
+            <p>Uplifting and relaxing lemon balm is a popular remedy for calming the nervous system and comforting the heart, this is a herbal ally to help us through panic and grief </p>
+            <p> Lemon balm can be propagated from seeds or cuttings in the spring. It prefers well-drained soil out of direct sunlight and self-seeds easily once established. </p>
+            <p> It's best to harvest leaves from early Summer onwards before the flowers open. Cut the plant 6 inches above the ground and tie in bundles and dry  </p>
+            <p class="text-[#007646] text-base"> Read more <span aria-hidden="true">&rarr;</span></p>
          </div>
-         <div>
-            <h3>History</h3>
-            <h4>Origin</h4>
-            <p> Lemon balm is native to SOuthern Europe, Western Asia and Nothern Africa but now grows across the world.</p>
+        </div>
+         <div class="rounded-md border p-4 bg-[#FCFBFF] border-[#F3F4F8]">
+          <h3 class="small-heading">History</h3>
+            <h4 class="font-semibold text-[#333333]">Origin</h4>
+            <p> Lemon balm is native to Southern Europe, Western Asia and Nothern Africa but now grows across the world.</p>
             <p>It was used as an anti-depressant 1000 years ago and it was once used as a charm to attract love into a person's life. </p>
             <p>Early colonisers took lemon balm to North America to make tea to attract bees from honey. </p>
-            <p>Read more > </p>
-            <h4>Oral history</h4>
+           <div class="underline underline-offset-2">
+            <p class="text-[#362663] text-base "> Read more <span aria-hidden="true">&rarr;</span></p></div>
+            <h4 class="text-[#362663] font-semibold ">Oral history</h4>
          </div>
-         <div>
-            <h3>Remedies</h3>
-            <p> Lemon balm is a relaxing tonic for anxiety, depression, nervousness and chronic stress. It's also used for the treatment of palpitations of a nervous origin and IBS caused by over-anxiety. It's a potent antiviral used in tyhe treatment of cold sores. Energetically it is cooling, drying and sour. 
+         <div class="border rounded-md p-4 border-[#F7F1EA] bg-[#FFFCF8]">
+            <h3 class="small-heading">Remedies</h3>
+            <p class="text-base"> Lemon balm is a relaxing tonic for anxiety, depression, nervousness and chronic stress. It's also used for the treatment of palpitations of a nervous origin and IBS caused by over-anxiety. It's a potent antiviral used in tyhe treatment of cold sores. Energetically it is cooling, drying and sour. 
             </p>
-            <p>Read more > </p>
-            <div>
+            <p class="text-[#007646] text-base"> Learn more <span aria-hidden="true">&rarr;</span></p>
+            <div class="gap-y-32 grid grid-rows-2">
+            <div class=" bg-[#FCF4E0] border-[#FCF4E0] rounded-md shadow-sm p-4">
                <h4>Cold sore balm</h4>
-            </div>
-            <div>
+              </div>
+               <div class="bg-[#FCF4E0] border-[#FCF4E0] rounded-md shadow-sm p-4">
                <h4>Lavendar night milk</h4>
             </div>
-         </div>
-      </section>
+          </div>
+         
+        </div>
+      </div>
    </body>
 </html>

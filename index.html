@@ -4,31 +4,30 @@
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <title>Apocatherapy</title>
-      <link href="./output.css" rel="stylesheet">
+      <link href="./style.css" rel="stylesheet">
    </head>
    <body>
-      <header class="bg-white border-b border-gray-200  shadow-sm">
-         <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
-            <a href="#" class="-m-1.5 p-1.5">
+    <header class="header">
+        <nav class="nav" aria-label="Global">
+          <a href="#" class="logo-link">
             <span class="sr-only">Your Company</span>
-            <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
-            </a>
-            <div class="flex lg:hidden">
-               <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
-                  <span class="sr-only">Open main menu</span>
-                  <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                  </svg>
-               </button>
-            </div>
-            <div class="hidden lg:flex lg:gap-x-8">
-               <a href="./index.html" class="inline-flex items-center border-b-2 border-[#01510D] px-1 pt-1 text-sm font-medium text-[#01510D]" aria-current="page">Home<span></span></a>
-               <a href="./lemonbalm.html" class="text-sm  leading-6 text-[#858483]">Plants</a>
-               <a href="#" class="text-sm  leading-6 text-[#858483]">About us</a>
-               <a href="#" class="text-sm  leading-6 text-[#858483]">Settings</a>
-               <!-- <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a> -->
-            </div>
-         </nav>
+            <img class="logo" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
+          </a>
+          <div class="menu-toggle">
+            <button type="button" class="menu-button">
+              <span class="sr-only">Open main menu</span>
+              <svg class="menu-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </button>
+          </div>
+          <div class="nav-links">
+            <a href="./index.html" class="nav-link">Home</a>
+            <a href="./lemonbalm.html" class="nav-link active">Plants</a>
+            <a href="#" class="nav-link">About us</a>
+            <a href="#" class="nav-link">Settings</a>
+          </div>
+        </nav>
       </header>
       <div class=" mx-auto px-20 pt-8 pb-4">
          <div class="min-w-0 flex-1 mx-auto pb-8">
