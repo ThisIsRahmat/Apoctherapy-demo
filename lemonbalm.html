@@ -7,24 +7,20 @@
     <title>Apocatherapy Home - lemonbalm</title>
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="audio.css" />
   </head>
 
   <body>
 
-    <header class="header">
-        <nav class="nav" aria-label="Global">
-          <a href="#" class="logo-link">
-            <span class="sr-only">Your Company</span>
-            <img class="logo" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
-          </a>
-          <div class="menu-toggle">
-            <button type="button" class="menu-button">
-              <!-- <span class="sr-only">Open main menu</span> -->
-              <svg class="menu-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-              </svg>
-            </button>
-          </div>
+    <header>
+        <nav  aria-label="Global">
+         
+      
+            <img class="logo"
+             src="./media/apothecary-logo.jpg"
+             alt="">
+      
+ 
           <div class="nav-links">
             <a href="./index.html" class="nav-link">Home</a>
             <a href="./lemonbalm.html" class="nav-link active">Plants</a>
@@ -40,6 +36,7 @@
             <div class="lemon-balm">
               <div>
                 <h1>Lemon Balm</h1>
+                <img src="./media/lemon-balm-1.jpg">
               </div>
               <div>
                 <h2>Profile</h2>
@@ -111,9 +108,27 @@
             <p>Early colonizers took lemon balm to North America to make tea to attract bees from honey.</p>
             <p class="purple-read-more">Read more <span aria-hidden="true">&rarr;</span></p>
             <h4>Oral history</h4>
+            <!-- <audio controls>
+                <source src="./media/Lemon balm with Ali Yellop.wav" type="audio/wav" />
+
+              </audio> -->
+
+              <div style="width: 100%;   display: flex;">
+                <audio src="./media/Lemon balm with Ali Yellop.wav" preload=”metadata” loop></audio>
+             
+                <button type="button" class="custom-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#362663" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+                  </button>
+            <div style="justify-content: center;  flex: 1 1 0%;">
+                <span style="font-size: 14px;" id="current-time" class="time">0:00</span>
+                <input style="width: 100%;" type="range" id="seek-slider" max="100" value="0">
+                <span style="font-size: 14px;"  id="duration" class="time">0:00</span>
+              </div>
+            </div>
+              
           </div>
-          <div class="remedies">
-            <h3>Remedies</h3>
+          <div  class="remedies">
+            <h3 style=" padding: 24px;">Remedies</h3>
             <p >Lemon balm is a relaxing tonic for anxiety, depression, nervousness, and chronic stress. It's also used for the treatment of palpitations of a nervous origin and IBS caused by over-anxiety. It's a potent antiviral used in the treatment of cold sores. Energetically, it is cooling, drying, and sour.</p>
             <p class="green-read-more">Read more <span aria-hidden="true">&rarr;</span></p>
             <div>
