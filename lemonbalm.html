@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="audio.css" />
+    <script src="audio.js"></script>
   </head>
 
   <body>
@@ -16,9 +17,11 @@
         <nav  aria-label="Global">
          
       
-            <img class="logo"
-             src="./media/apothecary-logo.jpg"
-             alt="">
+            <a href="./index.html">
+                <img class="logo"
+                 src="./media/apothecary-logo.jpg"
+                 alt="">
+               </a>
       
  
           <div class="nav-links">
@@ -108,24 +111,34 @@
             <p>Early colonizers took lemon balm to North America to make tea to attract bees from honey.</p>
             <p class="purple-read-more">Read more <span aria-hidden="true">&rarr;</span></p>
             <h4>Oral history</h4>
-            <!-- <audio controls>
-                <source src="./media/Lemon balm with Ali Yellop.wav" type="audio/wav" />
-
-              </audio> -->
-
-              <div style="width: 100%;   display: flex;">
-                <audio src="./media/Lemon balm with Ali Yellop.wav" preload=”metadata” loop></audio>
-             
-                <button type="button" class="custom-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#362663" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+    
+              <div class="player">
+            
+                <div class="player-controls">
+                  <button class="player-play-btn" 
+                          role="button" 
+                          aria-label="Play"
+                          data-playing="false"
+                          >
+                    <div class="player-icon-play">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>play</title><polygon class="icon-play" points="19.05 12 6 3.36 6 20.64 19.05 12"/><rect class="icon-container" width="24" height="24"/></svg>
+                      </div>
+                    
+                    <div class="player-icon-pause hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>pause</title><g><rect  class="icon-pause" x="6" y="3.26" width="4" height="17.48"/><rect class="icon-pause" x="14" y="3.26" width="4" height="17.48"/></g><rect class="icon-container" width="24" height="24"/></svg>
+                    </div>
                   </button>
-            <div style="justify-content: center;  flex: 1 1 0%;">
-                <span style="font-size: 14px;" id="current-time" class="time">0:00</span>
-                <input style="width: 100%;" type="range" id="seek-slider" max="100" value="0">
-                <span style="font-size: 14px;"  id="duration" class="time">0:00</span>
+                  <div class="player-timeline">
+                    <span class="player-time player-time-current">00:00</span>
+                    <input style="width: 100%;" type="range" id="player-progress-filled" max="100" value="0">
+
+
+                  </div>
+                
+                </div>
+                
+                <audio src="./media/Lemon balm with Ali Yellop.wav"  ></audio>
               </div>
-            </div>
-              
           </div>
           <div  class="remedies">
             <h3 style=" padding: 24px;">Remedies</h3>
