@@ -57,11 +57,13 @@
   .logo-link {
     margin: -6px; /* -m-1.5 */
     padding: 6px; /* p-1.5 */
+    align-items: right;
   }
   
   .logo {
     height: 2rem; /* h-8 */
     width: auto;
+    align-items: right;
   }
   
   /* Mobile menu toggle */
@@ -114,7 +116,325 @@
     }
   }
   
+
+  .home-page{
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+
+
+  }
+
+  .home-header {
+    font-family: 'Lora', Arial, Helvetica, sans-serif;
+    color: #333333;
+    font-weight: 500;
+    font-size: 32px;
+    margin-bottom: 12px;
+  }
+
+  .home-page p{ 
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+  }
+  .home {
+    min-width: 0px;
+    flex: 1 1 0%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2rem /* 32px */;
+    font-size: 48px;
+    font-weight: 500;
+  }
   
+
+  .home p {
+    font-size: 16px;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+  }
+
+  .home-layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Add this to create a gap between rows */
+    align-items: start;
+    row-gap: 0.5rem;
+    column-gap: 0.5rem;
+
+  }
+
+  .green-sentence{
+    color: #007646;
+  }
+
+  .today {
+    background-color: #FFFCFE;
+    border: solid 1px;
+    border-radius: 0.375rem;
+    border-color: #F7F1EA;
+    padding: 0.375rem;
+    height: 100%;
+
+  }
+
+  .today-lemon-balm {
+    background-color: #F9F4ED;
+    border: solid 1px;
+    border-color: #F9F4ED;
+    border-radius: 0.375rem;
+
+  }
+
+  .today-lemon-balm h4 {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Lora', Arial, Helvetica, sans-serif;
+    padding: 0.375rem;
+
+  }
+
+
+  .today-lemon-balm p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    padding: 0.375rem;
+
+  }
+
+
+  .today input{
+    display: block;
+    width: 100%;
+    border-radius: 0px;
+    border-top-left-radius: 0.375rem /* 6px */;
+    border-bottom-left-radius: 0.375rem /* 6px */;
+    border-width: 0px;
+    padding-top: 0.375rem /* 6px */;
+    padding-bottom: 0.375rem /* 6px */;
+    padding-left: 2.5rem /* 40px */;
+    --tw-text-opacity: 1;
+    color: rgb(17 24 39 / var(--tw-text-opacity)) /* #111827 */;
+    .placeholder\:text-\[\#252525\]::placeholder {
+        --tw-text-opacity: 1;
+        color: rgb(37 37 37 / var(--tw-text-opacity)) /* #252525 */;
+    }
+    .placeholder\:text-xs::placeholder {
+        font-size: 0.75rem /* 12px */;
+        line-height: 1rem /* 16px */;
+    }
+
+
+  }
+
+  .today button{
+    position: relative;
+    background-color: #007646;
+    color: #FFFFFF;
+    margin-left: -1px;
+    padding-left: 2.5rem /* 40px */;
+    align-items: center;
+    border-top-right-radius: 0.375rem /* 6px */;
+    border-bottom-right-radius: 0.375rem /* 6px */;
+    font-weight: 600;
+    font-size: 0.875rem /* 14px */;
+    line-height: 1.25rem /* 20px */;
+    padding-top: 0.5rem /* 8px */;
+    padding-bottom: 0.5rem /* 8px */;
+    padding-left: 0.75rem /* 12px */;
+    padding-right: 0.75rem /* 12px */;
+    column-gap: 0.375rem /* 6px */;
+    
+  }
+
+  .today-lemon-balm img{
+    width: 100%;
+    height: 3rem /* 48px */;
+
+  }
+
+
+
+
+  .my-plants {
+    background-color: #FFFFFF;
+    border: solid 1px;
+    border-radius: 0.375rem;
+    border-color: #F7F1EA;
+    padding: 0.375rem;
+    height: 100%;
+
+
+  }
+
+  .my-plants-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Add this to create a gap between rows */
+    align-items: start;
+    row-gap: 0.5rem;
+    column-gap:  0.375rem;
+
+
+  }
+
+  .my-plants-grid-card {
+    background-color: #F9F4ED;
+    border-color: #F9F4ED;
+
+    border-radius: 0.375rem;
+    
+  }
+
+  .my-plants-grid-card img{
+    height: 120px;
+    width: 100%;
+    border-top-left-radius: 0.375rem;
+    border-top-right-radius: 0.375rem;
+  }
+
+  .my-plants-grid-header {
+    color: #411C06;
+    font-family: 'Lora', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 0.175rem;
+
+  }
+
+  .my-guides {
+    background-color: #F7FFF9;
+    border-color: #D3EEE3;
+    border-radius: 0.375rem;
+    padding: 0.375rem;
+
+  }
+
+
+  .my-guides img {
+width: 100%;
+height: ;
+  }
+
+  .my-guides p {
+    padding-block:  0.575rem;
+
+  }
+
+
+  .my-guides-box {
+    border: solid;
+    border-color: #E1F1EF;
+    background-color: #E1F1EF;
+    border-radius: 0.375rem;
+  
+    margin-bottom: 0.775rem;
+    
+  }
+
+  .my-guides-box img {
+
+    border-color: #E1F1EF;
+    border-top-left-radius: 0.375rem;
+    border-top-right-radius: 0.375rem;
+    height: 120px;
+  
+
+  }
+  
+  .my-guides-box h4{
+    font-family: 'Lora', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #333333;
+    padding-block:  0.375rem;
+    padding:  0.375rem;
+  }
+  
+
+  .community {
+    background-color: #FFFCFE;
+    border: solid 1px;
+    border-radius: 0.375rem;
+    border-color: #F7F1EA;
+    padding: 0.375rem;
+    height: 100%;
+    row-gap: 0.375rem;
+
+
+  }
+
+  .community h5 {
+    font-family: 'Lora', Arial, Helvetica, sans-serif;
+    color: #411C06;
+    font-size: 24px;
+    padding-block:  0.375rem;
+  }
+
+  .community-card {
+    background-color: #F9F4ED;
+    border: solid 1px;
+    border-color: #F9F4ED;
+    border-radius: 0.375rem;
+   
+
+  }
+
+
+  .community-card h4 {
+    font-family: 'Lora', Arial, Helvetica, sans-serif;
+    color: #411C06;
+    font-size: 20px;
+    font-weight: 500;
+    padding-block:  0.375rem;
+    padding:  0.375rem;
+  }
+
+
+  .community-card p {
+
+    font-size: 16px;
+    font-weight: 400;
+    padding-block:  0.575rem;
+    color: #411C06;
+    padding:  0.375rem;
+  }
+
+
+  .community img{
+
+    height: 120px;
+    width: 100%;
+  }
+
+  .community-b-t {
+    width: 100%;
+    padding:0%;
+    background-color: #007646;
+    border-color: #007646;
+    color: #ffffff;
+    border-radius: 0.25rem;
+    border: solid 1px;
+    font-size: 16px;
+    padding-block:  0.175rem;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+  }
+
+
+  .community-b-b {
+    width: 100%;
+    padding:0%;
+    background-color: #D3EEE3;
+    border-color: #D3EEE3;
+    color: #007646;
+    border-radius: 0.25rem;
+    border: solid 1px;
+    font-size: 16px;
+    padding-block:  0.175rem;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+
+  }
   section {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Add this to create a gap between rows */
@@ -163,6 +483,8 @@
     background-position: 50% 50%;
   
   }
+
+
 
   .lemon-balm {
     border: solid 1px;

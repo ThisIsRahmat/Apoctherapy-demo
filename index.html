@@ -4,7 +4,7 @@
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <title>Apocatherapy</title>
-      <link href="./style.css" rel="stylesheet">
+      <link href="style.css" rel="stylesheet">
    </head>
    <body>
     <header class="header">
@@ -15,7 +15,7 @@
           </a>
           <div class="menu-toggle">
             <button type="button" class="menu-button">
-              <span class="sr-only">Open main menu</span>
+              <!-- <span class="sr-only">Open main menu</span> -->
               <svg class="menu-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
               </svg>
@@ -29,130 +29,112 @@
           </div>
         </nav>
       </header>
-      <div class=" mx-auto px-20 pt-8 pb-4">
-         <div class="min-w-0 flex-1 mx-auto pb-8">
-            <h2 class="text-2xl font-bold leading-7 text-gray-900 sm:truncate  sm:tracking-tight pb-4">Home</h2>
+    
+      <div class="home-page">
+        <div class="home">
+            <h2>Home</h2>
             <div>
-               <p>
-                  Welcome back to your personal apocatherapy connecting you to a network of fellow plant pals.
-               </p>
+                <p>
+                    Welcome back to your personal apocatherapy connecting you to a network of fellow plant pals.
+                </p>
             </div>
-         </div>
-         <div class="grid grid-cols-1 px-8 gap-12 sm:grid-cols-2">
-            <div class="border p-6 rounded-md bg-[#F7F1EA] border-[#F7F1EA]">
-               <h4 class="large-heading">Today</h4>
-               <p> How are you feeling right now?</p>
-               <div>
-                  <div class="mt-2 flex rounded-md ">
-                     <div class="relative flex flex-grow items-stretch focus-within:z-10">
-                        <input  class="block w-full rounded-none rounded-l-md border-0 py-1.5 pl-10 text-gray-900  placeholder:text-[#252525] placeholder:text-xs " placeholder="Stressed">
-                     </div>
-                     <button type="button" class="relative bg-[#007646] text-white -ml-px inline-flex items-center gap-x-1.5 rounded-r-md px-3 py-2 text-sm font-semibold ring-1  hover:text-[#007646] hover:bg-white">
-                     Submit
-                     </button>
-                  </div>
-                  <div class="border relative rounded-md bg-[#F9F4ED] border-[#F9F4ED] shadow-lg mt-4">
-                     <h4 class="p-4 border-b border-[#F0DDD2]   small-heading">Lemon Balm</h4>
-                     <div class=" relative border-b h-12 border-[#F0DDD2] ">
-                        <img src="https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"  class=" w-full h-12 ">
- 
-                    
-                      </div>
-                     <p class="p-4"> The best option to ease stress and anxiety</p>
-                     <p class="text-[#007646] p-4 text-base"> Learn more <span aria-hidden="true">&rarr;</span></p>
-                  </div>
-               </div>
-            </div>
-            <div class="border p-6 rounded-md bg-white border-[#F7F1EA]">
-               <h4 class="large-heading">My plants</h4>
-               <p> Click on a plant to read its full profile.</p>
-               <div>
-         
-                  <ul role="list" class="grid grid-cols-2 gap-x-6 gap-y-8 ">
-                     <li class="overflow-hidden rounded-xl border border-[#F0DDD2] bg-[#F9F4ED]">
-                        <div class=" relative border-b border-[#F0DDD2] ">
-                          <img src="https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"  class=" object-fill ">
-   
-                      
+        </div>
+        <div class="home-layout">
+            <div class="today">
+                <h4 class="home-header" >Today</h4>
+                <p> How are you feeling right now?</p>
+                <div>
+                    <div>
+                        <input placeholder="Stressed">
+                    </div>
+                    <button type="button">
+                        Submit
+                    </button>
+                    <div class="today-lemon-balm">
+                        <h4>Lemon Balm</h4>
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80">
                         </div>
-                        <p class="p-4 xs-heading"> Borage</p>
-                      </li>
-                      <li class="overflow-hidden rounded-xl border border-[#F0DDD2] bg-[#F9F4ED]">
-                        <div class=" relative border-b border-[#F0DDD2] ">
-                          <img src="https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"  class=" object-fill ">
-   
-                      
-                        </div>
-                        <p class="p-4 xs-heading">Chamomile</p>
-                      </li>
-                      <li class="overflow-hidden rounded-xl border border-[#F0DDD2] bg-[#F9F4ED]">
-                     <div class=" relative border-b border-[#F0DDD2] ">
-                       <img src="https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"  class=" object-fill ">
-
-                   
-                     </div>
-                     <p class="p-4 xs-heading">Gotu kola</p>
-                   </li>
-                   <li class="overflow-hidden rounded-xl border border-[#F0DDD2] bg-[#F9F4ED]">
-                     <div class=" relative border-b border-[#F0DDD2] ">
-                       <img src="https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"  class=" object-fill ">
-
-                   
-                     </div>
-                     <p class="p-4 xs-heading">Lavender</p>
-                   </li>
-                  </ul>
-                  
-                  <p class="text-[#007646] pt-4 text-base font-semibold"> See all plants <span aria-hidden="true">></span></p>
-               </div>
+                        <p> The best option to ease stress and anxiety</p>
+                        <p class="green-sentence"> Learn more &rarr;</p>
+                    </div>
+                </div>
             </div>
-            <div class="border p-6 rounded-md bg-[#D3EEE3] border-[#D3EEE3]">
-               <h4 class="large-heading">My guides</h4>
-               <p class="">Click on a plant to read it's full profile</p>
-      
-               <ul role="list" class="grid grid-cols-1 gap-y-8 ">
+            <div class="my-plants">
+                <h4 class="home-header">My plants</h4>
+                <p> Click on a plant to read its full profile.</p>
            
-                   <li class="overflow-hidden rounded-xl border border-[#E1F1EF] bg-[#E1F1EF] shadow-sm">
-                  <div class=" relative border-b border-[#E1F1EF] ">
-                    <img src="https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"  class=" object-fill h-12 w-full ">
+                 <div class="my-plants-grid">
 
-                
-                  </div>
-                  <h4 class="p-4 xs-heading">How rising temperatures affect local landscapes</h4>
-                </li>
-                <li class="overflow-hidden rounded-xl border border-[#E1F1EF] bg-[#E1F1EF] shadow-sm">
-                  <div class=" relative border-b border-[#E1F1EF] ">
-                    <img src="https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"  class=" object-fill h-12 w-full ">
-
-                
-                  </div>
-                  <h4 class="p-4 xs-heading">How rising temperatures affect local landscapes</h4>
-                </li>
-               </ul>
-               <p class="text-[#007646] pt-4 text-base font-semibold">See all guides <span aria-hidden="true">></span></p>
-            </div>
-            <div class="border p-6 rounded-md bg-[#F7F1EA] border-[#F7F1EA]">
-               <h4 class="large-heading">Community</h4>
-               <p> Click on a plant to read its full profile.</p>
-               <h5 class="small-heading">Events</h5>
-               <div class="border rounded-md bg-[#FCF4E0] border-[#F0DDD2]  mt-4">
-             
-                  <h4 class="p-4 xs-heading border-b  border-[#F0DDD2]"> Meet the herbalists</h4>
-                  <div class=" relative border-b h-12 border-[#F0DDD2] ">
-                     <img src="https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"  class=" w-full h-12 ">
-
+                    <div class="my-plants-grid-card">
+                            <div>
+                                <img src="https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80">
+                            </div>
+                            <h4 class="my-plants-grid-header"> Borage</h4>
+                        </div>
+                        <div class="my-plants-grid-card">
+                            <div>
+                                <img src="https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80">
+                            </div>
+                            <h4 class="my-plants-grid-header">Chamomile</h4>
+                        </div>
+                        <div class="my-plants-grid-card">
+                            <div>
+                                <img src="https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80">
+                            </div>
+                            <h4 class="my-plants-grid-header">Gotu kola</h4>
+                        </div>
+                        <div class="my-plants-grid-card">
+                            <div>
+                                <img src="https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80">
+                            </div>
+                            <h4 class="my-plants-grid-header">Lavender</h4>
+                    </div>
                  
-                   </div>
-                  <p class="p-4 border-[#F0DDD2] border-t">2nd September 2024</p>
-               </div>
-               <h5>Seeds</h5>
-               <div class="space-y-2 pt-4">
-                  <button type="button" class="rounded-md w-full bg-[#007646]  px-3 py-2 text-sm font-semibold text-white shadow-sm  ">  I have seeds to share</button>
-                  <button type="button" class="rounded-md w-full bg-[#D3EEE3] px-3 py-2 text-sm font-semibold text-[#007646] shadow-sm "> I would like to request seeds</button>
-               </div>
+                    <p class="green-sentence"> See all plants ></p>
+                </div>
             </div>
-         </div>
-      </div>
-      </div>
+            <div class="my-guides">
+                <h4 class="home-header">My guides</h4>
+                <p>Click on a plant to read its full profile</p>
+           
+               
+                <div class="my-guides-box">
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80">
+                        </div>
+                        <h4>Quick guide to guierrella gardening.</h4>
+                    </div>
+
+                    <div class="my-guides-box">
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80">
+                        </div>
+                        <h4>How rising temperatures affect local landscapes</h4>
+              </div>
+                <p class="green-sentence">See all guides ></p>
+            </div>
+            <div class="community">
+                <h4 class="home-header">Community</h4>
+                <p> Click on a plant to read its full profile.</p>
+                <h5>Events</h5>
+                <div class="community-card">
+                    <h4> Meet the herbalists</h4>
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80">
+                    </div>
+                    <p>2nd September 2024</p>
+                </div>
+                <h5>Seeds</h5>
+                <div>
+                    <button type="button" class="community-b-t"> I have seeds to share</button>
+                    <button type="button" class="community-b-b"> I would like to request seeds</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    
    </body>
 </html>
