@@ -82,9 +82,9 @@
   
   .player-progress {
     display: flex;
-    postion: relative;
+
     height: 6px;
-    background: #362663;
+   
     border-radius: 25px;
     margin: 0 5px;
     flex: 10;
@@ -94,10 +94,9 @@
   
   .player-progress-filled {
     height: 6px;
-    background: #0e0e0e;
-    flex: 0;
-    flex-basis: 0%;
-    border-radius: 25px;
+    color: #362663 ;
+    width: 100%
+
   }
   
   .player-time {
